@@ -1,0 +1,36 @@
+[
+    {
+        "id": "c6226865-bbce-49d0-998e-193f1ed19f51",
+        "customerId": "d4f70b16-0e64-4df6-b378-a7796959168c",
+        "refund": "1.00",
+        "owing": "2.00",
+        "cost": "3.00",
+        "currency": "CAD",
+        "year": "2019",
+        "latestState": {
+            "name": "NEW",
+            "createdAt": "2019-11-05T03:48:27.216Z"
+        },
+        "createdAt": "2019-11-05T03:48:27.209Z",
+        "updatedAt": "2019-11-05T03:48:27.209Z",
+        "benefits": [],
+        "documents": []
+    },
+    {
+        "id": "222",
+        "customerId": "333",
+        "refund": "1.00",
+        "owing": "2.00",
+        "cost": "3.00",
+        "currency": "CAD",
+        "year": "2019",
+        "latestState": {
+            "name": "NEW",
+            "createdAt": "2019-11-05T03:48:27.216Z"
+        },
+        "createdAt": "2019-11-05T03:48:27.209Z",
+        "updatedAt": "2019-11-05T03:48:27.209Z",
+        "benefits": [],
+        "documents": []
+    }
+]
