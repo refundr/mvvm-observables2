@@ -21,7 +21,6 @@
 		7284B6FD2378706800559317 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FB2378706800559317 /* Result.swift */; };
 		7284B6FF237870B000559317 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FE237870B000559317 /* FileDataService.swift */; };
 		7284B701237870D900559317 /* TaxReturnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B700237870D900559317 /* TaxReturnService.swift */; };
-		7284B7032378712200559317 /* TaxReturnDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7022378712200559317 /* TaxReturnDecodable.swift */; };
 		7284B7082378728400559317 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7052378728400559317 /* RequestHandler.swift */; };
 		7284B7092378728400559317 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7062378728400559317 /* RequestFactory.swift */; };
 		7284B70A2378728400559317 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7072378728400559317 /* RequestService.swift */; };
@@ -50,7 +49,6 @@
 		7284B6FB2378706800559317 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7284B6FE237870B000559317 /* FileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
 		7284B700237870D900559317 /* TaxReturnService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnService.swift; sourceTree = "<group>"; };
-		7284B7022378712200559317 /* TaxReturnDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnDecodable.swift; sourceTree = "<group>"; };
 		7284B7052378728400559317 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		7284B7062378728400559317 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		7284B7072378728400559317 /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				7284B7172378945200559317 /* DynamicValue.swift */,
-				7284B71223788E7100559317 /* Decodable */,
 				7284B71123788E5100559317 /* View */,
 				7284B6ED23786D5900559317 /* Name.swift */,
 			);
@@ -199,14 +196,6 @@
 				7284B71323788EC700559317 /* TaxReturn.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7284B71223788E7100559317 /* Decodable */ = {
-			isa = PBXGroup;
-			children = (
-				7284B7022378712200559317 /* TaxReturnDecodable.swift */,
-			);
-			path = Decodable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +289,6 @@
 				7284B701237870D900559317 /* TaxReturnService.swift in Sources */,
 				7284B70A2378728400559317 /* RequestService.swift in Sources */,
 				7284B70C237872C700559317 /* Reachability.swift in Sources */,
-				7284B7032378712200559317 /* TaxReturnDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

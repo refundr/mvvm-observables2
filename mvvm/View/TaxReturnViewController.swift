@@ -2,6 +2,8 @@ import UIKit
 
 class TaxReturnViewController: UIViewController {
     
+    private let refreshControl = UIRefreshControl()
+    
     let dataSource = TaxReturnDataSource()
     
     lazy var viewModel : TaxReturnViewModel = {
@@ -11,17 +13,32 @@ class TaxReturnViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Names"
+        title = "Tax Returns"
         
         configureTableView()
         viewModel.fetchTaxReturns()
         
+        // Add Refresh Control to Table View
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Your Tax Returns ...")
+        refreshControl.addTarget(self, action: #selector(ellaMethod(_:)), for: .valueChanged)
+        
+    }
+    
+    @objc func ellaMethod(_ sender: Any) {
+       viewModel.fetchTaxReturns()
+        self.refreshControl.endRefreshing()
     }
     
     func configureTableView() {
+        
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
-
+        
         view.addSubview(tableView)
         tableView.pin(to: view)
         

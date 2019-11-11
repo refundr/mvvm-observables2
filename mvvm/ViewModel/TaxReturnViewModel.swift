@@ -24,10 +24,8 @@ struct TaxReturnViewModel {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let taxReturns):
-                    
                     // TODO: One can add any view model conversion here
                     // TODO: Feed this to the GenericDatasource
-                    
                     print(taxReturns)
                     self.dataSource?.data.value = taxReturns
                 case .failure(let error) :
