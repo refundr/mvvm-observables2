@@ -1,7 +1,7 @@
 import UIKit
 
-class TaxReturnCell: UITableViewCell {
-
+class TaxReturnCollectionViewCell: UICollectionViewCell {
+    
     var taxReturn : TaxReturn? {
         didSet {
             guard let taxReturn = taxReturn else {
@@ -11,14 +11,14 @@ class TaxReturnCell: UITableViewCell {
         }
     }
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         addSubview(nameLabel)
         setLabelConstraints()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("coder has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     let nameLabel: UILabel = {
@@ -30,17 +30,10 @@ class TaxReturnCell: UITableViewCell {
         return label
     }()
     
-    func set(name: Name) {
-        nameLabel.text = name.name
-    }
-    
     func setLabelConstraints() {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        
     }
-    
-    
 }

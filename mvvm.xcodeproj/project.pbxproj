@@ -14,7 +14,7 @@
 		7284B6E023786B5800559317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7284B6DE23786B5800559317 /* LaunchScreen.storyboard */; };
 		7284B6E823786BF800559317 /* TaxReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6E723786BF800559317 /* TaxReturnViewController.swift */; };
 		7284B6EE23786D5900559317 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6ED23786D5900559317 /* Name.swift */; };
-		7284B6F023786D8F00559317 /* TaxReturnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6EF23786D8F00559317 /* TaxReturnCell.swift */; };
+		7284B6F023786D8F00559317 /* TaxReturnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */; };
 		7284B6F323786DE100559317 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6F223786DE100559317 /* UIView+Ext.swift */; };
 		7284B6F62378703F00559317 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6F52378703F00559317 /* ParserHelper.swift */; };
 		7284B6FC2378706800559317 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B6FA2378706800559317 /* ErrorResult.swift */; };
@@ -28,8 +28,12 @@
 		7284B70E2378738600559317 /* tax-returns.json in Resources */ = {isa = PBXBuildFile; fileRef = 7284B70D2378738600559317 /* tax-returns.json */; };
 		7284B7102378787A00559317 /* TaxReturnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B70F2378787A00559317 /* TaxReturnViewModel.swift */; };
 		7284B71423788EC700559317 /* TaxReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B71323788EC700559317 /* TaxReturn.swift */; };
-		7284B716237893E600559317 /* TaxReturnDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B715237893E600559317 /* TaxReturnDataSource.swift */; };
+		7284B716237893E600559317 /* TaxReturnTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */; };
 		7284B7182378945200559317 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7284B7172378945200559317 /* DynamicValue.swift */; };
+		72CFDE2E2378F43F002CE2A9 /* TaxReturnViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */; };
+		72CFDE3023790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */; };
+		72CFDE3223790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */; };
+		72CFDE3423790ECF002CE2A9 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +46,7 @@
 		7284B6E123786B5800559317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7284B6E723786BF800559317 /* TaxReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewController.swift; sourceTree = "<group>"; };
 		7284B6ED23786D5900559317 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
-		7284B6EF23786D8F00559317 /* TaxReturnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnCell.swift; sourceTree = "<group>"; };
+		7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewCell.swift; sourceTree = "<group>"; };
 		7284B6F223786DE100559317 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		7284B6F52378703F00559317 /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 		7284B6FA2378706800559317 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
@@ -56,8 +60,12 @@
 		7284B70D2378738600559317 /* tax-returns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "tax-returns.json"; sourceTree = "<group>"; };
 		7284B70F2378787A00559317 /* TaxReturnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewModel.swift; sourceTree = "<group>"; };
 		7284B71323788EC700559317 /* TaxReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturn.swift; sourceTree = "<group>"; };
-		7284B715237893E600559317 /* TaxReturnDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnDataSource.swift; sourceTree = "<group>"; };
+		7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewDataSource.swift; sourceTree = "<group>"; };
 		7284B7172378945200559317 /* DynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnViewController2.swift; sourceTree = "<group>"; };
+		72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnCollectionViewCell.swift; sourceTree = "<group>"; };
+		72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				7284B6E723786BF800559317 /* TaxReturnViewController.swift */,
-				7284B6EF23786D8F00559317 /* TaxReturnCell.swift */,
+				72CFDE2D2378F43F002CE2A9 /* TaxReturnViewController2.swift */,
+				7284B6EF23786D8F00559317 /* TaxReturnTableViewCell.swift */,
+				72CFDE2F23790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,7 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				7284B70F2378787A00559317 /* TaxReturnViewModel.swift */,
-				7284B715237893E600559317 /* TaxReturnDataSource.swift */,
+				7284B715237893E600559317 /* TaxReturnTableViewDataSource.swift */,
+				72CFDE3123790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift */,
+				72CFDE3323790ECF002CE2A9 /* GenericDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,16 +283,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7284B6FD2378706800559317 /* Result.swift in Sources */,
-				7284B716237893E600559317 /* TaxReturnDataSource.swift in Sources */,
+				7284B716237893E600559317 /* TaxReturnTableViewDataSource.swift in Sources */,
 				7284B6E823786BF800559317 /* TaxReturnViewController.swift in Sources */,
 				7284B7102378787A00559317 /* TaxReturnViewModel.swift in Sources */,
-				7284B6F023786D8F00559317 /* TaxReturnCell.swift in Sources */,
+				7284B6F023786D8F00559317 /* TaxReturnTableViewCell.swift in Sources */,
 				7284B6F323786DE100559317 /* UIView+Ext.swift in Sources */,
 				7284B6D423786B5600559317 /* AppDelegate.swift in Sources */,
 				7284B7182378945200559317 /* DynamicValue.swift in Sources */,
 				7284B6F62378703F00559317 /* ParserHelper.swift in Sources */,
 				7284B6FC2378706800559317 /* ErrorResult.swift in Sources */,
+				72CFDE3023790AD0002CE2A9 /* TaxReturnCollectionViewCell.swift in Sources */,
+				72CFDE3423790ECF002CE2A9 /* GenericDataSource.swift in Sources */,
 				7284B7082378728400559317 /* RequestHandler.swift in Sources */,
+				72CFDE2E2378F43F002CE2A9 /* TaxReturnViewController2.swift in Sources */,
+				72CFDE3223790E05002CE2A9 /* TaxReturnCollectionViewDataSource.swift in Sources */,
 				7284B6FF237870B000559317 /* FileDataService.swift in Sources */,
 				7284B6EE23786D5900559317 /* Name.swift in Sources */,
 				7284B71423788EC700559317 /* TaxReturn.swift in Sources */,
