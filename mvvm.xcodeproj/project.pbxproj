@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7284B7172378945200559317 /* DynamicValue.swift */,
-				7284B71123788E5100559317 /* View */,
+				7284B71323788EC700559317 /* TaxReturn.swift */,
 				7284B6ED23786D5900559317 /* Name.swift */,
 			);
 			path = Model;
@@ -200,14 +200,6 @@
 				7284B7072378728400559317 /* RequestService.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		7284B71123788E5100559317 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7284B71323788EC700559317 /* TaxReturn.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
